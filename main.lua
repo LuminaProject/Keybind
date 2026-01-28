@@ -146,11 +146,11 @@ function main:Begin(PROPS)
 
     ResizeAll.Name = "ResizeAll"
     ResizeAll.Parent = Window
-    ResizeAll.AnchorPoint = Vector2.new(1, 0)
+    ResizeAll.AnchorPoint = Vector2.new(0.5, 0.5)
     ResizeAll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     ResizeAll.BackgroundTransparency = 1.000
     ResizeAll.BorderSizePixel = 0
-    ResizeAll.Position = UDim2.new(1, -8, 0, 8)
+    ResizeAll.Position = UDim2.new(0, 563, 0, 339)
     ResizeAll.Size = UDim2.new(0, 22, 0, 22)
     ResizeAll.FontFace = GetFont()
     ResizeAll.Text = ""
@@ -1300,7 +1300,7 @@ function main:Begin(PROPS)
         end
     end)
 
-    local showing = true
+    local showing = false
     MinimiseButton.MouseButton1Click:Connect(function() 
         showing = not showing
         
